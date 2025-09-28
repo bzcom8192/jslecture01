@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="sau01"></div>
+    <!-- JS: Output Data -->
+    <script>
+        document.write("Double Quote");
+        document.write('Single Quote');
+        document.write(123);
+        document.write(`\` = Backtick`);
+
+        const sau01 = document.getElementById("sau01");
+        sau01.style.fontSize = "100px";
+        sau01.style.fontFamily = "Arial, sans-serif";
+        sau01.style.textAlign = "center";
+
+        setInterval(() => {
+            sau01.innerText = new Date().toLocaleString('en-UK');
+            document.title = new Date().toLocaleString('en-UK');
+        }, 1000);
+
+        console.log("Hello World");
+        console.log(1234);
+    </script>
+</body>
+
+</html>
